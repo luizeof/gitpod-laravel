@@ -1,6 +1,6 @@
 # gitpod-laravel
 
-Gitpod Workspace for Laravel
+Full Development Workspace for Laravel.
 
 Get fresh, task-based dev environments for any issue, branch and merge/pull request. Enter true GitOps and experience a new level of productivity.
 

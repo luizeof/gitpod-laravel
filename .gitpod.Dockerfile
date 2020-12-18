@@ -5,8 +5,8 @@ ENV COMPOSER_MEMORY_LIMIT -1
 RUN sudo apt -y install software-properties-common
 
 RUN sudo apt-get update \
- && sudo apt-get -y install mysql-server mysql-client \
- && sudo apt-get -y install php-fpm php-cli php-bz2 php-bcmath php-gmp php-imap\
+ && sudo apt-get -y install mysql-server mysql-client graphviz \
+ && sudo apt-get -y install php-fpm php-cli php-bz2 php-bcmath php-gmp php-imap \
  && sudo apt-get -y install php-redis
 
 RUN sudo apt install -y php-dev libmcrypt-dev php-pear
@@ -85,7 +85,5 @@ RUN sudo phpenmod mbstring
 RUN sudo curl -s https://getcomposer.org/installer | php
 
 RUN sudo mv composer.phar /usr/local/bin/composer
-
-RUN composer global require laravel/installer
 
 USER gitpod

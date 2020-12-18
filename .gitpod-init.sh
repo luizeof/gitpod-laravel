@@ -1,15 +1,21 @@
 #!/bin/bash
 
-export PATH="$PATH:$HOME/.composer/vendor/bin"
+composer global require laravel/installer
 
-cp .env.example .env
+echo 'export PATH="$PATH:$HOME/.config/composer/vendor/bin"' >> ~/.bashrc
 
-sed -i "s|APP_URL=|APP_URL=${GITPOD_WORKSPACE_URL}|g" .env
+echo 'export PATH="$PATH:$HOME/.composer/vendor/bin"' >> ~/.bashrc
 
-sed -i "s|APP_URL=https://|APP_URL=https://8000-|g" .env
+if [ -f ".env" ]; then
 
-composer install
+    sed -i "s|APP_URL=|APP_URL=${GITPOD_WORKSPACE_URL}|g" .env
 
-npm install
+    sed -i "s|APP_URL=https://|APP_URL=https://8000-|g" .env
 
-npm i
+    composer install
+
+    npm install
+
+    npm i
+
+fi
