@@ -1,0 +1,21 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: bash .gitpod-init.sh
+
+vscode:
+  extensions:
+    - neilbrayfield.php-docblocker@2.1.0:DG/0jImoYat50A1oQ633dQ==
+    - mads-hartmann.bash-ide-vscode@1.11.0:VLESO/tPCjrfzzLcJy83aQ==
+    - naumovs.color-highlight@2.3.0:6nKORbxgnWjNaN6xACiaQQ==
+    - ms-azuretools.vscode-docker@1.5.0:sXMeJMbTgWECxAWvyhiC5Q==
+    - junstyle.php-cs-fixer@0.1.155:B2kS40szAcDqXL/iHMzYag==
+    - esbenp.prettier-vscode@5.6.0:o6BL3Pchy5KVBxQAzrFZ2A==
+    - foxundermoon.shell-format@7.0.1:dJqOSN173jVh12b+ScTqtw==
+    - vscode.docker@1.49.3:u8ak975skeaO3/SHKX0wsw==
+    - felixfbecker.php-intellisense@2.3.14:FMIUPy0FlHl+kH1Df7LR2A==
+    - bradlc.vscode-tailwindcss@0.4.3:OmgUwJW/nFom0SHcYT4VnQ==
+    - amiralizadeh9480.laravel-extra-intellisense@0.4.0:YC4FZ2W05/Z1HhkRJvse3g==
+    - onecentlin.laravel-blade@1.25.0:v9Oz26jwvUo5eyq8znO+Zw==
+    - shufo.vscode-blade-formatter@0.6.1:R0QsqKkLVz3zallC9aGReA==
