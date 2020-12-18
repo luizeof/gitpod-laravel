@@ -4,7 +4,7 @@
 
 Get fresh, task-based dev environments for any issue, branch and merge/pull request. Enter true GitOps and experience a new level of productivity.
 
-### Remote-first. Secure by Design.
+## Remote-first. Secure by Design.
 
 You no longer need an over-powered laptop to code, Gitpod works just as smoothly on a Chromebook or iPad. All you need is a browser.
 
