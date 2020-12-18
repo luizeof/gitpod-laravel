@@ -9,7 +9,7 @@ RUN sudo apt-get update \
  && sudo apt-get -y install php-fpm php-cli php-bz2 php-bcmath php-gmp php-imap\
  && sudo apt-get -y install php-redis
 
-RUN sudo apt install php-dev libmcrypt-dev php-pear
+RUN sudo apt install -y php-dev libmcrypt-dev php-pear
 
 RUN sudo add-apt-repository ppa:ondrej/php
 
